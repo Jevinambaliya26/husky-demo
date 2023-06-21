@@ -76,11 +76,6 @@ model VerificationToken {
   @@map("verificationtokens")
 }
 
-model Test {
-  id        Int     @id
-  firstName String?
-}
-
 model Lead {
   id             String    @id @default(cuid())
   firstName      String?
