@@ -294,8 +294,3 @@ model CampaignProducts {
 
   @@unique([campaignId, productId])
 }
-
-model Test {
-  id        Int     @id
-  firstName String?
-}

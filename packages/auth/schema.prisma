@@ -49,7 +49,3 @@ model VerificationToken {
   @@unique([identifier, token])
   @@map("verificationtokens")
 }
-
-model Test {
-  id Int @id
-}
