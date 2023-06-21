@@ -276,9 +276,9 @@ enum planType {
 
 enum paymentTermType {
   ON_THE_DAY
-  WEEK       @map("7days")
-  MONTH      @map("30days")
-  TWO_MONTH  @map("60days")
+  WEEK        @map("7days")
+  MONTH       @map("30days")
+  TWO_MONTH   @map("60days")
 }
 
 enum paymentMethodType {
