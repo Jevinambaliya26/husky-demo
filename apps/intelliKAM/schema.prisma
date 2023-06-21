@@ -325,3 +325,7 @@ enum emailStatusType {
   SUCCESS
   FAIL
 }
+
+model Test {
+  id Int @id
+}
