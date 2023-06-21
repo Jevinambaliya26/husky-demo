@@ -77,7 +77,8 @@ model VerificationToken {
 }
 
 model Test {
-  id Int @id
+  id        Int     @id
+  firstName String?
 }
 
 model Lead {
