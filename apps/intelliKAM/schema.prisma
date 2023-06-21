@@ -263,6 +263,10 @@ model CampaignProducts {
   @@unique([campaignId, productId])
 }
 
+model TestModel {
+  id Int @id
+}
+
 enum userType {
   CUSTOMER_ADMIN
   CUSTOMER_STANDARD
