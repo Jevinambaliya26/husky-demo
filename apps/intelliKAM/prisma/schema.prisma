@@ -30,6 +30,7 @@ model User {
   createdAt        DateTime         @default(now())
   updatedAt        DateTime?
   phoneNumber      String?
+  middleName       String?
   createdBy        User?            @relation(name: "userUsers", fields: [createdById], references: [id])
   users            User[]           @relation(name: "userUsers")
   billingHistory   BillingHistory[]
