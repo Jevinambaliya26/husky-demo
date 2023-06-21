@@ -76,6 +76,10 @@ model VerificationToken {
   @@map("verificationtokens")
 }
 
+model Test {
+  id Int @id
+}
+
 model Lead {
   id             String    @id @default(cuid())
   firstName      String?
@@ -324,8 +328,4 @@ enum qrType {
 enum emailStatusType {
   SUCCESS
   FAIL
-}
-
-model Test {
-  id Int @id
 }
