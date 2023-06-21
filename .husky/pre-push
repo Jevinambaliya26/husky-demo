@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+#!/bin/sh
+
+# Check if schema.prisma is modified or newly added in the git status output
+if git status --porcelain | grep -E '^\s*[MADRC]\s+apps/intelliKAM/schema.prisma$' >/dev/null 2>&1; then
+  echo "Error: schema.prisma is modified or newly added. Please commit or discard the changes before proceeding."
+  exit 1
+fi
+
+# Continue with the commit
+exit 0
